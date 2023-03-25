@@ -188,10 +188,16 @@ section {
 }
 .project-info {
   padding:1em;
+  align-items: center;
+  column-gap: 0cap;
+  font-size: medium;
+  color: #333;
 }
+
 .project-category{
   font-size: 0.8em;
   color: deepskyblue;
+  
 }
 .project-title{
   display: flex;
