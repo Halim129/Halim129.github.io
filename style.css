@@ -189,6 +189,9 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
 }
+.more-details a {
+  display: block;
+}
 .project-info a {
   display: block;
   max-width: 100%;
