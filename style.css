@@ -133,13 +133,6 @@ section {
     transition: 0.7s;
 
   } 
-  .card {
-    background-color: aliceblue;
-    width: 21.25em;
-    box-shadow: 0 5px
-    
-  }
- 
   
   .card:hover {
     transform: scale(1.1);
@@ -192,6 +185,13 @@ section {
   column-gap: 0cap;
   font-size: medium;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.project-info a {
+  display: block;
+  max-width: 100%;
 }
 
 .project-category{
