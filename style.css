@@ -4,8 +4,9 @@
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
+  color: rgb(51, 50, 50)
 }
 
 
@@ -41,6 +42,21 @@ header {
   font-size: 1.1em;
   font-weight: 500;
   padding-left: 30px;
+}
+
+.humburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width:25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all o.3s ease-in-out;
+  background-color: #fff;
 }
 
 section {
@@ -263,6 +279,36 @@ section {
 section{
   padding: 80px 20px;
 }
+
+.humburger {
+  display: block;
+}
+.humburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.humburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+.nav-menu.active{
+  left: 0;
+}
+
+.navigation {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #333;
+  width: 100px;
+  text-align: center;
+  transition: 0.3s;
+}
+
 .main-content h2{
   font-size: 1em;
 }
